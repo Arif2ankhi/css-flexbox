@@ -6,6 +6,61 @@
     <link rel="stylesheet" href="style.css">
     <title>Responsive Design</title>
     <style>
+
+        /* mobile */
+            p:nth-of-type(1) {
+                background-color: tomato;
+                color: #fff;
+            };
+            p:nth-of-type(2) {
+                background-color: red;
+                color: #fff;
+            }
+            p:nth-of-type(3) {
+                background-color: turquoise;
+                color: #fff;
+            }
+
+            .tablet, .desktop {
+                display: none;
+            }
+            
+
+            /* Tablet */
+
+            @media screen and (min-width: 768px) {
+                .mobile, .desktop {
+                    display: none;
+                }
+                .tablet {
+                    display: block;
+                }
+                .parent {
+                    display: flex;
+                    /* flex-wrap: wrap; */
+                }
+
+                .parent > *  {
+                    flex: 1;
+
+                }
+            }
+            /* desktop */
+
+            @media screen and (min-width: 1200px) {
+                .mobile, .tablet {
+                    display: none;
+                }
+                .desktop {
+                    display: block;
+                }
+                .parent {
+                    gap: 10px;
+                }
+                
+            }
+
+
         @media screen and (max-width: 900px) {
             h1{
                 color: brown;
@@ -16,10 +71,21 @@
     </style>
 </head>
 <body>
-    <h1>Responsive Web Design</h1>
-    <p>
-        LLoren1000 ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, turpis id varius consectetur, mauris lectus faucibus nisi, et pulvinar ipsum justo ac nisi. Proin vel
+    <h1 class="mobile">I am from mobile </h1>
+    <h1 class="tablet">I am from tablet </h1>
+    <h1 class="desktop">I am from desktop </h1>
+    <div class="parent">
+        <p>
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus sit omnis minima expedita, maiores natus assumenda perferendis? Odit atque alias, corrupti laudantium, modi quas explicabo aspernatur enim sunt vitae porro commodi error nostrum! Soluta reprehenderit provident quo, voluptatem temporibus, rem id fugiat tempora maiores veniam rerum hic facere autem debitis libero explicabo. Aut eius amet laboriosam odit perferendis tenetur, earum expedita error repellendus, facere nihil facilis, suscipit officiis. Velit debitis praesentium libero voluptatum, porro, doloribus, nesciunt corrupti reiciendis deleniti vitae quod eaque quam error? Perferendis modi facilis qui obcaecati ipsam dignissimos laboriosam nostrum laudantium. Voluptas officiis corporis inventore recusandae at!
     </p>
+        <p>
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus sit omnis minima expedita, maiores natus assumenda perferendis? Odit atque alias, corrupti laudantium, modi quas explicabo aspernatur enim sunt vitae porro commodi error nostrum! Soluta reprehenderit provident quo, voluptatem temporibus, rem id fugiat tempora maiores veniam rerum hic facere autem debitis libero explicabo. Aut eius amet laboriosam odit perferendis tenetur, earum expedita error repellendus, facere nihil facilis, suscipit officiis. Velit debitis praesentium libero voluptatum, porro, doloribus, nesciunt corrupti reiciendis deleniti vitae quod eaque quam error? Perferendis modi facilis qui obcaecati ipsam dignissimos laboriosam nostrum laudantium. Voluptas officiis corporis inventore recusandae at!
+    </p>
+        <p>
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus sit omnis minima expedita, maiores natus assumenda perferendis? Odit atque alias, corrupti laudantium, modi quas explicabo aspernatur enim sunt vitae porro commodi error nostrum! Soluta reprehenderit provident quo, voluptatem temporibus, rem id fugiat tempora maiores veniam rerum hic facere autem debitis libero explicabo. Aut eius amet laboriosam odit perferendis tenetur, earum expedita error repellendus, facere nihil facilis, suscipit officiis. Velit debitis praesentium libero voluptatum, porro, doloribus, nesciunt corrupti reiciendis deleniti vitae quod eaque quam error? Perferendis modi facilis qui obcaecati ipsam dignissimos laboriosam nostrum laudantium. Voluptas officiis corporis inventore recusandae at!
+    </p>
+      
     
+    </div>
 </body>
 </html>
