@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        h1 {
+            position: relative;
+            font-size: 30px;
+        }
+        h1::after {
+            content: '';
+            display: inline-block;
+            width: 11px;
+            height: 16px;
+            background-color: tomato;
+            border-radius: 50%;
+            position: absolute;
+            top: 11px;
+            left: 137px;
+            z-index: -999;
+        }
+        p {
+            color: black;
+        }
+       
+        input {
+            /* border: none;
+            outline: none; */
+            /* background-color: tomato;
+            color: #fff; */
+            border-radius: 10px;
+            padding: 10px 10px ;
+        }
+
+        input:focus {
+            background-color: rgb(141, 131, 131);
+        }
+
+        input:disabled {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: tomato;
+            color: #fff;
+            border: none;
+        }
+        p:lang(bn) {
+            color: red;
+        }
+        li:nth-of-type(odd) {
+            color: blueviolet;
+        }
+
+
+        /* a {
+        }
+         a:active {
+            color: red;
+
+         }
+        a:visited {
+            color: blue;
+
+        }
+        a:hover {
+
+            color: green;
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- <p lang="bn">পারফরম্যান্সের মাধ্যমে তিনি দ্রুত নজর কাড়েন</p> -->
+
+
+   
+
+     <h1>Hello world</h1>
+     <!-- <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+     </ul>
+    <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolor quo iste qui doloremque iusto necessitatibus corrupti labore, praesentium esse soluta beatae iure ullam officiis, enim cupiditate! Corrupti sit debitis quae autem omnis magnam necessitatibus, voluptatum unde. Animi fuga autem facere perspiciatis cumque. Ab fuga ut expedita nobis molestias earum.
+    </p> -->
+    
+     <!-- <h1>Hello World2</h1>
+        <h1>Hello World3</h1>
+        <p></p> -->
+        
+    <!-- <a href="#">Google</a> -->
+     <!-- <form action="">
+        <label for="fullName">Full Name </label>
+        <input type="text" name="" id="fullName"/> <br> <BR>
+        </BR>
+        <label for="add">Address</label>
+        <input type="text" name="address" id="add" value="Dhaka" disabled/>
+        
+     </form> -->
+    
+</body>
+</html>
